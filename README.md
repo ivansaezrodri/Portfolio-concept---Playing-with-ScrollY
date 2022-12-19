@@ -36,7 +36,7 @@ Teniendo esto en cuenta, las animaciones las he planteado de la siguiente manera
 Sabiendo esto y teniendo en cuenta que jugamos con incrementos de _100_ en _100_, he ido restando a _**Window.ScrollY**_ la cantidad necesaria para que siempre nos posicionemos de 0 a 100.
 
 ### Ejemplo:
-(_Situación: Hemos hecho scroll en la página y actualmente **Window.ScrollY** equivale a **500**_)
+(_Situación: Hemos hecho scroll en la página y actualmente **Window.ScrollY** equivale a **400**_)
 ```
 var value = Window.ScrollY;
 var  yo  =  document.getElementById("yo")
