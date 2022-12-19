@@ -7,6 +7,7 @@ En este portfolio he usado la propiedad _scrollY_ del objeto Window que retorna 
 Existen diversas formas de conseguir estas "animaciones", por ejemplo en la página oficial de [**Apple**](https://www.apple.com/es/macbook-pro-14-and-16/) cuando se hace _scroll_ en alguno de sus portátiles, se puede ver como se abre el dispositivo a medida que bajamos en la página.
 
 ![Imagen ejemplo Apple](https://i.ibb.co/8mxn4SZ/Screenshot-20221219-181159.png)
+
 Esto podríamos conseguirlo con una correlación de imágenes  dentro de un array y cuando detectemos que baja el usuario intercalaremos cada una de estas imágenes con un for.
 ```
 var animacion=[
