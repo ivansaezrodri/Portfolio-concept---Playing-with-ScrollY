@@ -35,6 +35,10 @@ main {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -241,6 +245,11 @@ h6 {
     font-weight: 500;
     margin: 0;
     line-height: 1em;
+}
+
+.proyectos__github{
+    color: rgb(64, 140, 187);
+    font-weight: bold;
 }
 
 
