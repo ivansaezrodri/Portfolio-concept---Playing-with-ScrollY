@@ -1,34 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-}   
+}
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: rgb(5,5,5);
+    background: rgb(5, 5, 5);
     background-repeat: no-repeat;
-    background-position:top;
-    background-attachment:scroll;         
-    background-image: linear-gradient(180deg, rgba(53,53,53,1) 0%, rgba(35,35,35,1) 35%, rgba(5,5,5,1) 100%);
-    height: 400vh;
+    background-position: top;
+    background-attachment: scroll;
+    background-image: linear-gradient(180deg, rgba(53, 53, 53, 1) 0%, rgba(35, 35, 35, 1) 35%, rgba(5, 5, 5, 1) 100%);
+    height: 320vh;
 }
 
-header{
+header {
     position: fixed;
     display: flex;
     padding: 2em;
-    flex-grow: 0;
     height: 2em;
+    width: 100%;
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-grow: 10;
 }
 
 .flex {
@@ -36,30 +35,38 @@ main{
     align-items: center;
 }
 
-
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: white;
     font-family: roboto;
 }
 
-.logo{
+.logo {
     height: auto;
     width: 1.2em;
     margin-left: 1.5em;
 }
 
-.todo{
-    top: 8em;
+.todo {
+    display: flex;
     position: fixed;
+    top: -5em;
+    padding-top: 13em;
     height: 100%;
     width: -webkit-fill-available;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+
 /* Titulo */
-.titulo h1{
+
+.titulo h1 {
     text-align: center;
     font-size: 3.7em;
     font-weight: 900;
@@ -68,7 +75,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 0em;
 }
 
-.titulo h2{
+.titulo h2 {
     color: rgb(218, 218, 218);
     text-align: center;
     font-size: 1.2em;
@@ -81,21 +88,22 @@ h1,h2,h3,h4,h5,h6{
 
 /* Contenedor Portatil */
 
-.contenedor{
+.contenedor {
     height: auto;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .portatil {
-    top: 3.65em;
+    margin-bottom: -7em;
     position: absolute;
     height: auto;
     width: 48em;
     z-index: 5;
 }
 
-.instagram {       
+.instagram {
     top: 3.5em;
     left: 42em;
     position: relative;
@@ -111,10 +119,10 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: column;
     top: 4em;
     left: 8em;
-    z-index: 5;
+    z-index: 6;
 }
 
-.yo__titulo{
+.yo__titulo {
     margin-top: 5em;
     border-radius: 2em 2em 0 0;
     color: white;
@@ -127,11 +135,30 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .yo__imagen {
-    margin-top: -.3em;
     height: auto;
     width: 9em;
     border-radius: .2em;
     border-top: 9px solid black;
+    z-index: 2;
+}
+
+.yo__imagen--links {
+    filter: opacity(0%);
+    z-index: 1;
+    margin-top: -3em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.yo__imagen--linkedin {
+    width: 3em;
+    height: auto;
+}
+
+.yo__imagen--github {
+    width: 3em;
+    height: 3em;
 }
 
 .revels {
@@ -145,7 +172,7 @@ h1,h2,h3,h4,h5,h6{
     z-index: 5;
 }
 
-.rickymorty{
+.rickymorty {
     position: relative;
     z-index: 3;
     height: auto;
@@ -156,18 +183,19 @@ h1,h2,h3,h4,h5,h6{
     z-index: 5;
 }
 
+
 /* About me */
 
-.aboutme{
+.aboutme {
     position: relative;
     color: white;
-    width: fit-content;
+    width: 20em;
     z-index: 0;
     right: 25em;
     top: 0em;
 }
 
-.aboutme h2{
+.aboutme h2 {
     color: rgb(218, 218, 218);
     font-size: 4em;
     font-weight: 900;
@@ -176,7 +204,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1em;
 }
 
-.aboutme p{
+.aboutme p {
     color: rgb(218, 218, 218);
     font-size: 1.2em;
     font-weight: 500;
@@ -184,21 +212,22 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1em;
 }
 
+
 /* About me */
 
 
-
 /* Proyectos */
-.proyectos{    
+
+.proyectos {
     position: relative;
     color: white;
-    width: fit-content;
+    width: 20em;
     z-index: 0;
     right: 55em;
-    top: -1em;
+    top: 4em;
 }
 
-.proyectos h2{
+.proyectos h2 {
     color: rgb(218, 218, 218);
     font-size: 4em;
     font-weight: 900;
@@ -207,7 +236,7 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1em;
 }
 
-.proyectos p{
+.proyectos p {
     color: rgb(218, 218, 218);
     font-size: 1.2em;
     font-weight: 500;
@@ -218,16 +247,17 @@ h1,h2,h3,h4,h5,h6{
 
 /* Formulario */
 
-.contacto{
-    display: none;
+.contacto {
+    /* display: none; */
     position: relative;
-    height: 22.3em;
-    width: 35.6em;
-    z-index: 5;
-    top: -18.7em;    
+    height: 19.9em;
+    width: 35.8em;
+    z-index: 6;
+    top: -18.8em;
+    filter: opacity(0%) brightness(0%);
 }
 
-.contacto h3{
+.contacto h3 {
     color: white;
     font-weight: 300;
     float: left;
@@ -236,7 +266,7 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: .2em;
 }
 
-.contacto__contenedor{
+.contacto__contenedor {
     background-image: url(../imgs/fondo-contacto.jpg);
     background-position: center;
     background-size: cover;
@@ -248,7 +278,7 @@ h1,h2,h3,h4,h5,h6{
     height: 112%;
 }
 
-.contacto__formulario{
+.contacto__formulario {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -259,13 +289,11 @@ h1,h2,h3,h4,h5,h6{
     padding: 5em;
 }
 
-.contacto__formulario textarea{
+.contacto__formulario textarea {
     resize: none;
 }
 
-
-
-.contacto__formulario--boton{
+.contacto__formulario--boton {
     background-color: rgb(27, 27, 27);
     border: .1em solid rgb(54, 54, 54);
     border-radius: .4em;
@@ -273,7 +301,7 @@ h1,h2,h3,h4,h5,h6{
     margin: .5em;
 }
 
-.contacto__botones{
+.contacto__botones {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
