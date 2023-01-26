@@ -50,4 +50,4 @@ if  (window.scrollY  >=  400  &&  window.scrollY  <  500)  {
 
 ```
 
-## ![Resultado](https://ivansaezrodrigo.github.io/Portfolio-concept---Playing-with-ScrollY/)
+## [Resultado](https://ivansaezrodrigo.github.io/Portfolio-concept---Playing-with-ScrollY/)
