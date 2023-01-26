@@ -50,4 +50,6 @@ if  (window.scrollY  >=  400  &&  window.scrollY  <  500)  {
 
 ```
 
-## [Resultado](https://ivansaezrodrigo.github.io/Portfolio-concept---Playing-with-ScrollY/)
+## Aquí el resultado: [Resultado](https://ivansaezrodrigo.github.io/Portfolio-concept---Playing-with-ScrollY/)
+
+A día de hoy cambiaría muchas cosas, empezando por usar el transform y algún framework (27/01/23)
